@@ -1,12 +1,12 @@
 {
   "name": "create-backend-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "bin": {
     "create-backend-app": "./bin/index.js"
   },
   "scripts": {
-    "build": "bun build ./index.ts --target=bun --outfile ./bin/index.js",
+    "build": "bun build ./index.ts --target=node --outfile ./bin/index.js",
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {

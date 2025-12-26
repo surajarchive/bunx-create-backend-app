@@ -1,5 +1,4 @@
-#!/usr/bin/env bun
-// @bun
+#!/usr/bin/env node
 
 // index.ts
 import { execSync } from "child_process";
@@ -33,7 +32,7 @@ async function main() {
 `);
   execSync("bun install", { stdio: "inherit" });
   console.log(`
-\u2705 Project ready
+✅ Project ready
 `);
   console.log(`cd ${name}`);
   console.log("bun dev");
